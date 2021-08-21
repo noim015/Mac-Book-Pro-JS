@@ -108,3 +108,24 @@ document.getElementById('paid-delivery').addEventListener('click',function(){
    
     
 })
+
+//Promo code apply
+document.getElementById('apply-promo').addEventListener('click',function(){
+    const getFinalTotalID = document.getElementById('final-total');
+    const getTotalPriceID = document.getElementById('total-price');
+    const getTotalPrice = parseFloat(getTotalPriceID.innerText);
+    const getPromoInputID = document.getElementById('promo-input');
+    const getPromoInput = getPromoInputID.value;
+    if(getPromoInput=='stevekaku'){
+        getFinalTotalID.innerText =getTotalPrice - getTotalPrice * 0.20;
+        getPromoInputID.value = '';
+    }
+    else if(getPromoInput==''){
+        alert('Empty promo field');
+        getPromoInputID.value = '';
+    }
+    else{
+        alert('Not a valid promo code');
+        getPromoInputID.value = '';
+    }
+})
