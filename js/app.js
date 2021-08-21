@@ -1,15 +1,18 @@
+//Function for Get and Set Total and Final Price
+function setOverallCost(fPrice,tPrice,totalCost){
+    const getFinalPriceID = document.getElementById(fPrice);
+    const getTotalPriceId = document.getElementById(tPrice);
+    getTotalPriceId.innerText = totalCost;
+    getFinalPriceID.innerText = totalCost;
+}
+
 //Function for Memory
 function totalMemoryCost(memoryCost){
     const exStorageCost = parseFloat(document.getElementById('extra-storage-cost').innerText);
     const exDeliveryCost = parseFloat(document.getElementById('delivery-charge').innerText);
     const getExtraMemoryID = document.getElementById('extra-memory-cost');
-    const getExtraMemoryCost = parseFloat(getExtraMemoryID.innerText);
-    const getFinalPriceID = document.getElementById('final-total');
-    const totalPriceId = document.getElementById('total-price');
-    const totalPrice = parseFloat(totalPriceId.innerText);
     let totalPriceFinal = memoryCost + 1299 + exStorageCost + exDeliveryCost;
-    totalPriceId.innerText = totalPriceFinal;
-    getFinalPriceID.innerText = totalPriceFinal;
+    setOverallCost('final-total','total-price',totalPriceFinal);
     getExtraMemoryID.innerText = memoryCost;
 }
 //Function for Storage
@@ -17,13 +20,8 @@ function totalStorageCost(storageCost){
     const exMemoryCost = parseFloat(document.getElementById('extra-memory-cost').innerText);
     const exDeliveryCost = parseFloat(document.getElementById('delivery-charge').innerText);
     const getExtraStorageID = document.getElementById('extra-storage-cost');
-    const getExtraStorageCost = parseFloat(getExtraStorageID.innerText);
-    const getFinalPriceID = document.getElementById('final-total');
-    const totalPriceId = document.getElementById('total-price');
-    const totalPrice = parseFloat(totalPriceId.innerText);
     let totalPriceFinal = storageCost + 1299 + exMemoryCost + exDeliveryCost;
-    totalPriceId.innerText = totalPriceFinal;
-    getFinalPriceID.innerText = totalPriceFinal;
+    setOverallCost('final-total','total-price',totalPriceFinal)
     getExtraStorageID.innerText = storageCost;
 }
 //Function for Delivery
@@ -31,17 +29,11 @@ function totalDeliveryCost(deliveryCost){
     const exMemoryCost = parseFloat(document.getElementById('extra-memory-cost').innerText);
     const exStorageCost = parseFloat(document.getElementById('extra-storage-cost').innerText);
     const getExtraDeliveryID = document.getElementById('delivery-charge');
-    const getExtraDeliveryCost = parseFloat(getExtraDeliveryID.innerText);
-    const getFinalPriceID = document.getElementById('final-total');
-    const totalPriceId = document.getElementById('total-price');
-    const totalPrice = parseFloat(totalPriceId.innerText);
     let totalPriceFinal = deliveryCost + 1299 + exMemoryCost + exStorageCost;
-    totalPriceId.innerText = totalPriceFinal;
-    getFinalPriceID.innerText = totalPriceFinal;
+    setOverallCost('final-total','total-price',totalPriceFinal);
     getExtraDeliveryID.innerText = deliveryCost;
     
 }
-
 
 //Event Handler for 8GB Unified Memory
 document.getElementById('memory-8gb').addEventListener('click',function(){
@@ -87,12 +79,12 @@ document.getElementById('apply-promo').addEventListener('click',function(){
     const getPromoInput = getPromoInputID.value;
     if(getPromoInput=='stevekaku'){
         if(getTotalPrice != getFinalTotalPrice){
-            alert('Prome has already been applied');
+            alert('Promo has already been applied');
             getPromoInputID.value = '';
         }
         else{ 
-        getFinalTotalID.innerText =getTotalPrice - getTotalPrice * 0.20;
-        getPromoInputID.value = '';
+            getFinalTotalID.innerText =getTotalPrice - getTotalPrice * 0.20;
+            getPromoInputID.value = '';
         }
     }
     else if(getPromoInput==''){

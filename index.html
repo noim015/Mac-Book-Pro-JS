@@ -8,76 +8,85 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    
-      <div class="container">
-          <div class="row mt-5">
-              <div class="col-md-6">
-                  <img class="img-thumbnail" src="images/mac.png" alt="">
-              </div>
-              <div class="col-md-6">
-                  <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
-                  <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic KewBoard-US English.</p>
-                  <div class="row pt-5">
-                    <div class="col-md-12">
-                        <p class="h4">Memory</p>
-                        <button id="memory-8gb" type="button" class="btn btn-outline-dark">8GB unified memory</button>
-                        <button id="memory-16gb" type="button" class="btn btn-outline-dark">16GB unified memory</button>
-                      </div>
-                  </div>
-                  <div class="row pt-5">
-                    <div class="col-md-12">
-                        <p class="h4">Storage</p>
-                        <button id="256gb-storage" type="button" class="btn btn-outline-dark">256GB SSD storage</button>
-                        <button id="512gb-storage" type="button" class="btn btn-outline-dark">512GB SSD storage</button>
-                        <button id="1tb-storage" type="button" class="btn btn-outline-dark">1TB SSD storage</button>
-                      </div>
-                  </div>
-                  <div class="row pt-5">
-                    <div class="col-md-12">
-                        <p class="h4">Choose your delivery option</p>
-                        <button id="free-delivery" type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button id="paid-delivery" type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
-                      </div>
-                  </div>
-                  <div class="row pt-5">
-                      <div class="col-md-6">
-                          <table class="table">
-                              <tbody>
-                                  <tr>
-                                      <th>Best Price</th>
-                                      <th>$<span>1299</span></th>
-                                  </tr>
-                                  <tr>
-                                      <th>Extra Memory Cost</th>
-                                      <th>$<span id="extra-memory-cost">0</span></th>
-                                  </tr>
-                                  <tr>
-                                      <th>Extra Storage Cost</th>
-                                      <th>$<span id="extra-storage-cost" >0</span></th>
-                                  </tr>
-                                  <tr style="border-bottom: 2px solid #000;">
-                                      <th>Delivery Charge</th>
-                                      <th>$<span id="delivery-charge">0</span></th>
-                                  </tr>
-                                  <tr>
-                                      <th>Total Price</th>
-                                      <th>$<span id="total-price">1299</span></th>
-                                  </tr>
-                    
-                              </tbody>
-                          </table>
-                                 <p class="h6">Add Promo Code</p>
-                                 <input id="promo-input" type="text"> <button id="apply-promo" type="button" class="btn btn-danger">Apply</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container">
-          <div class="row text-center mt-2 pt-3 mb-5" style="border-top: 1px solid #ededed;">
-              <h1>Total: $ <span id="final-total">1299</span></h1>
-          </div>
-      </div>
+    <header>
+
+    </header>
+      <!-- Main area starts here  -->
+      <main>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <img class="img-thumbnail" src="images/mac.png" alt=""> <!-- iMac image  -->
+                </div>
+                <div class="col-md-6">
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic KewBoard-US English.</p>
+                    <div class="row pt-5">
+                      <div class="col-md-12">
+                          <p class="h4">Memory</p> <!-- Memorey Section  -->
+                          <button id="memory-8gb" type="button" class="btn btn-outline-dark">8GB unified memory</button>
+                          <button id="memory-16gb" type="button" class="btn btn-outline-dark">16GB unified memory</button>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                      <div class="col-md-12">
+                          <p class="h4">Storage</p> <!-- Storage Section  -->
+                          <button id="256gb-storage" type="button" class="btn btn-outline-dark">256GB SSD storage</button>
+                          <button id="512gb-storage" type="button" class="btn btn-outline-dark">512GB SSD storage</button>
+                          <button id="1tb-storage" type="button" class="btn btn-outline-dark">1TB SSD storage</button>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                      <div class="col-md-12">
+                          <p class="h4">Choose your delivery option</p> <!-- Delivery Section  -->
+                          <button id="free-delivery" type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
+                          <button id="paid-delivery" type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-md-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>Best Price</th>
+                                        <th>$<span>1299</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Extra Memory Cost</th>
+                                        <th>$<span id="extra-memory-cost">0</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Extra Storage Cost</th>
+                                        <th>$<span id="extra-storage-cost" >0</span></th>
+                                    </tr>
+                                    <tr style="border-bottom: 2px solid #000;">
+                                        <th>Delivery Charge</th>
+                                        <th>$<span id="delivery-charge">0</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Total Price</th>
+                                        <th>$<span id="total-price">1299</span></th>
+                                    </tr>
+                      
+                                </tbody>
+                            </table>
+                                   <p class="h6">Add Promo Code</p>
+                                   <input id="promo-input" type="text"> <button id="apply-promo" type="button" class="btn btn-danger">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center mt-2 pt-3 mb-5" style="border-top: 1px solid #ededed;">
+                <h1>Total: $ <span id="final-total">1299</span></h1>
+            </div>
+        </div>
+      </main>
+      <!-- Main area ends here  -->
+      <footer>
+
+      </footer>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     <script src=""></script>
