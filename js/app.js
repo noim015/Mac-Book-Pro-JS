@@ -5,9 +5,12 @@ document.getElementById('memory-8gb').addEventListener('click',function(){
     const exDeliveryCost = parseFloat(document.getElementById('delivery-charge').innerText);
     const getExtraMemoryID = document.getElementById('extra-memory-cost');
     const getExtraMemoryCost = parseFloat(getExtraMemoryID.innerText);
+    const getFinalPriceID = document.getElementById('final-total');
     const totalPriceId = document.getElementById('total-price');
     const totalPrice = parseFloat(totalPriceId.innerText);
-    totalPriceId.innerText = 0 + 1299+exStorageCost+exDeliveryCost;
+    let totalPriceFinal = 0 + 1299+exStorageCost+exDeliveryCost;
+    totalPriceId.innerText = totalPriceFinal;
+    getFinalPriceID.innerText = totalPriceFinal;
     getExtraMemoryID.innerText = 0;
 })
 
@@ -18,9 +21,12 @@ document.getElementById('memory-16gb').addEventListener('click',function(){
     const exDeliveryCost = parseFloat(document.getElementById('delivery-charge').innerText);
     const getExtraMemoryID = document.getElementById('extra-memory-cost');
     const getExtraMemoryCost = parseFloat(getExtraMemoryID.innerText);
+    const getFinalPriceID = document.getElementById('final-total');
     const totalPriceId = document.getElementById('total-price');
     const totalPrice = parseFloat(totalPriceId.innerText);
-    totalPriceId.innerText = 1299 + 180+exStorageCost+exDeliveryCost;
+    let totalPriceFinal = 1299 + 180+exStorageCost+exDeliveryCost;
+    totalPriceId.innerText = totalPriceFinal;
+    getFinalPriceID.innerText = totalPriceFinal;
     getExtraMemoryID.innerText = 180;
     
 })
@@ -31,9 +37,12 @@ document.getElementById('256gb-storage').addEventListener('click',function(){
     const exDeliveryCost = parseFloat(document.getElementById('delivery-charge').innerText);
     const getExtraStorageID = document.getElementById('extra-storage-cost');
     const getExtraStorageCost = parseFloat(getExtraStorageID.innerText);
+    const getFinalPriceID = document.getElementById('final-total');
     const totalPriceId = document.getElementById('total-price');
     const totalPrice = parseFloat(totalPriceId.innerText);
-    totalPriceId.innerText = 0 + 1299 + exMemoryCost + exDeliveryCost;
+    let totalPriceFinal = 0 + 1299 + exMemoryCost + exDeliveryCost;
+    totalPriceId.innerText = totalPriceFinal;
+    getFinalPriceID.innerText = totalPriceFinal;
     getExtraStorageID.innerText = 0;
     
 })
@@ -43,9 +52,12 @@ document.getElementById('512gb-storage').addEventListener('click',function(){
     const exDeliveryCost = parseFloat(document.getElementById('delivery-charge').innerText);
     const getExtraStorageID = document.getElementById('extra-storage-cost');
     const getExtraStorageCost = parseFloat(getExtraStorageID.innerText);
+    const getFinalPriceID = document.getElementById('final-total');
     const totalPriceId = document.getElementById('total-price');
     const totalPrice = parseFloat(totalPriceId.innerText);
-    totalPriceId.innerText = 1299 + 100 + exMemoryCost + exDeliveryCost;
+    let totalPriceFinal = 1299 + 100 + exMemoryCost + exDeliveryCost;
+    totalPriceId.innerText = totalPriceFinal;
+    getFinalPriceID.innerText = totalPriceFinal;
     getExtraStorageID.innerText = 100;
     
 })
@@ -55,9 +67,12 @@ document.getElementById('1tb-storage').addEventListener('click',function(){
     const exDeliveryCost = parseFloat(document.getElementById('delivery-charge').innerText);
     const getExtraStorageID = document.getElementById('extra-storage-cost');
     const getExtraStorageCost = parseFloat(getExtraStorageID.innerText);
+    const getFinalPriceID = document.getElementById('final-total');
     const totalPriceId = document.getElementById('total-price');
     const totalPrice = parseFloat(totalPriceId.innerText);
-    totalPriceId.innerText = 1299 + 180 + exMemoryCost + exDeliveryCost;
+    let totalPriceFinal = 1299 + 180 + exMemoryCost + exDeliveryCost;
+    totalPriceId.innerText = totalPriceFinal;
+    getFinalPriceID.innerText = totalPriceFinal;
     getExtraStorageID.innerText = 180;
     
 })
@@ -68,9 +83,12 @@ document.getElementById('free-delivery').addEventListener('click',function(){
     const exStorageCost = parseFloat(document.getElementById('extra-storage-cost').innerText);
     const getExtraDeliveryID = document.getElementById('delivery-charge');
     const getExtraDeliveryCost = parseFloat(getExtraDeliveryID.innerText);
+    const getFinalPriceID = document.getElementById('final-total');
     const totalPriceId = document.getElementById('total-price');
     const totalPrice = parseFloat(totalPriceId.innerText);
-    totalPriceId.innerText = 0 + 1299 + exMemoryCost + exStorageCost;
+    let totalPriceFinal = 0 + 1299 + exMemoryCost + exStorageCost;
+    totalPriceId.innerText = totalPriceFinal;
+    getFinalPriceID.innerText = totalPriceFinal;
     getExtraDeliveryID.innerText = 0;
     
 })
@@ -80,9 +98,12 @@ document.getElementById('paid-delivery').addEventListener('click',function(){
     const exStorageCost = parseFloat(document.getElementById('extra-storage-cost').innerText);
     const getExtraDeliveryID = document.getElementById('delivery-charge');
     const getExtraDeliveryCost = parseFloat(getExtraDeliveryID.innerText);
+    const getFinalPriceID = document.getElementById('final-total');
     const totalPriceId = document.getElementById('total-price');
     const totalPrice = parseFloat(totalPriceId.innerText);
-    totalPriceId.innerText = 20 + 1299 + exMemoryCost + exStorageCost;
+    let totalPriceFinal = 20 + 1299 + exMemoryCost + exStorageCost;
+    totalPriceId.innerText = totalPriceFinal;
+    getFinalPriceID.innerText = totalPriceFinal;
     getExtraDeliveryID.innerText = 20;
    
     
